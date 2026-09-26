@@ -1,0 +1,55 @@
+body
+{
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: floralwhite;  /* warm off-white */
+  color: black;
+}
+#page-header  /* the banner rule — an id selector, one element only */
+{
+  background-color: darkslategray;
+  color: white;
+  padding: 16px;
+  text-align: center;
+}
+h1, h3
+{
+  color: seagreen;  /* the brand green */
+}
+.dish
+{
+  width: 300px;  /* content width; padding + border sit outside it */
+  background-color: mintcream;  /* pale mint */
+  border: 2px solid seagreen;
+  padding: 12px;
+  margin: 12px 0;
+}
+.dish h3
+{
+  font-size: 18px;
+  font-weight: 600;
+}
+nav a
+{
+  color: seagreen;
+  text-decoration: none;
+}
+footer p
+{
+  text-align: center;
+}
+/* ===== phone layout — the media query MUST stay last ============ */
+@media (max-width: 600px)
+{
+  .dish
+  {
+    width: 100%;  /* was 300px — now the full glass */
+  }
+  form
+  {
+    width: 100%;  /* was 480px — wider than many phones! */
+  }
+  h1
+  {
+    font-size: 22px;  /* headline, not billboard */
+  }
+}
